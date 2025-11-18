@@ -1,0 +1,30 @@
+#  Overview of the command-line assistant
+
+== Overview of the Command-Line Assistant Powered by RHEL Lightspeed
+
+The command-line assistant, powered by RHEL Lightspeed, is an intelligent tool designed to enhance the user experience when interacting with Red Hat Enterprise Linux (RHEL) via the command-line interface. It is tailored to cater to both novice and experienced users, providing assistance with a wide array of tasks, including but not limited to:
+
+- Answering RHEL-related questions
+- Guiding users through troubleshooting processes
+- Deciphering complex log entries
+- Assisting with various system administration tasks
+
+The command-line assistant operates by following a structured process flow for input and output:
+
+1. **Input Reception**: The assistant receives your question or command as input. It's important to note that all interactions are logged and stored for future reference, ensuring a comprehensive history of your engagement with the assistant.
+
+2. **Input Processing**: The input is then processed by the backend, preparing it for the subsequent stages.
+
+3. **Knowledge Retrieval**: The assistant searches for relevant knowledge related to your query from its extensive database.
+
+4. **AI Inference**: The query, relevant knowledge, and other necessary instructions are sent for AI inference, leveraging the power of Large Language Models (LLMs).
+
+5. **Output Generation**: Finally, you receive an output from the command-line assistant as a response. This response is a result of the AI inference, providing you with the information or solution you sought.
+
+To interact with the command-line assistant, use the "c" command followed by your question in quotation marks. For instance:
+
+```
+$ c "What is RHEL?"
+```
+
+**Warning**: While the command-line assistant is a powerful tool, it's crucial to verify the AI-generated responses for accuracy before implementing any suggestions. Human review is always recommended to ensure the reliability and correctness of the information provided.

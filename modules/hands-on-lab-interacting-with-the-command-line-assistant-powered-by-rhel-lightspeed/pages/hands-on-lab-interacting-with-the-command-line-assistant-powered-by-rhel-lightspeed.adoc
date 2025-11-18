@@ -1,0 +1,11 @@
+#  Hands-on Lab: Interacting with the Command-Line Assistant Powered by RHEL Lightspeed
+
+**Hands-on Lab: Interacting with the Command-Line Assistant Powered by RHEL Lightspeed**
+
+- **Setting up a test environment**: Learn to configure a RHEL system for hands-on experience with the command-line assistant powered by RHEL Lightspeed.
+- **Utilizing the command-line assistant**: Gain practical experience in interacting with the assistant for various tasks, such as:
+  - Answering RHEL related questions
+  - Assistance with troubleshooting and fixing issues
+  - Understanding log files
+  - Seeking recommendations for system configurations and more
+- **Best practices**: Understand the importance of human review when using AI-generated suggestions for system management tasks.

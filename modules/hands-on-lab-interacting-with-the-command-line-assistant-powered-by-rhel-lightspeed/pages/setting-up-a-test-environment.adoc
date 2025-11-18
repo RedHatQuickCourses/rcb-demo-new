@@ -1,0 +1,66 @@
+#  Setting up a test environment
+
+= Setting Up a Test Environment for RHEL Lightspeed Command-Line Assistant
+
+To effectively demonstrate the capabilities of the RHEL Lightspeed Command-Line Assistant, it's essential to set up a test environment. This environment should mimic a real-world scenario, allowing users to interact with the assistant and perform various tasks. Here's a step-by-step guide to setting up such an environment:
+
+## Prerequisites
+
+1. **Root Access**: Ensure you have root or sudo privileges on your system to install necessary packages and make configuration changes.
+2. **RHEL System**: The test environment should be a Red Hat Enterprise Linux (RHEL) system where you can enable and utilize the RHEL Lightspeed Command-Line Assistant.
+
+## Step 1: Install Required Packages
+
+Before setting up the test environment, ensure that you have the necessary packages installed. In this case, we'll focus on the `httpd` package to demonstrate the assistant's capabilities in troubleshooting web server configurations.
+
+1. Update your system's package index:
+   ```
+   sudo dnf update -y
+   ```
+
+2. Install the `httpd` package:
+   ```
+   sudo dnf install -y httpd
+   ```
+
+## Step 2: Verify the Installation
+
+Verify that the `httpd` package has been installed correctly by listing its version:
+
+1. Execute the following command to list the installed `httpd` package version:
+   ```
+   sudo rpm -qa httpd
+   ```
+   You should see an output similar to:
+   ```
+   httpd-2.4.62-2.fc40.x86_64
+   ```
+
+2. Display the content of the `httpd.conf` file:
+   ```
+   sudo cat /etc/httpd/conf/httpd.conf
+   ```
+   This file contains the main Apache HTTP server configuration directives.
+
+## Step 3: Enable and Start the HTTPD Service
+
+Enable and start the `httpd` service to ensure it's running:
+
+1. Enable the service to start on boot:
+   ```
+   sudo systemctl enable httpd
+   ```
+
+2. Start the service:
+   ```
+   sudo systemctl start httpd
+   ```
+
+3. Verify that the service is active and enabled:
+   ```
+   sudo systemctl status httpd
+   ```
+
+## Step 4: Configure SELinux for Testing
+
+To demonstrate SELinux-related troubleshooting with the
